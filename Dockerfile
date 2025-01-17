@@ -15,6 +15,7 @@ RUN a2enmod proxy_fcgi
 RUN a2enmod proxy
 RUN a2enmod rewrite
 RUN a2enmod headers
+RUN a2enmod expires
 RUN a2enmod vhost_alias
 
 RUN sed -e 's/AllowOverride None/AllowOverride All/g' -i /etc/apache2/apache2.conf
